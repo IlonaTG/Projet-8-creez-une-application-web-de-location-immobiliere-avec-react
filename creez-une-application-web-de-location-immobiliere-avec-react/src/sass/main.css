@@ -1,0 +1,203 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 142.6%;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  max-width: 1240px;
+}
+
+body {
+  height: auto;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.links {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.links a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 70px;
+}
+.links.link-acceuil:hover {
+  text-decoration: underline;
+}
+.links.link-apropos:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 142.6%;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  max-width: 1240px;
+}
+
+body {
+  height: auto;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20vh;
+  margin-bottom: 10rem;
+  height: 7rem;
+}
+.banner .banner-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  z-index: 1;
+  height: 13.93rem;
+  width: 81vw;
+  margin-left: 0%;
+}
+.banner .banner-background {
+  position: absolute;
+  width: 81vw;
+  height: 14rem;
+  background-color: #000000;
+  opacity: 0.6;
+  z-index: 2;
+  border-radius: 25px;
+}
+.banner .banner-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6rem 1rem;
+  position: relative;
+  color: #ffffff;
+  z-index: 3;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 142.6%;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  max-width: 1240px;
+}
+
+body {
+  height: auto;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 81vw;
+  position: relative;
+  padding-top: 56px;
+  background-color: #F6F6F6;
+  border-radius: 25px;
+}
+.card-container .link-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 22rem;
+  height: 22rem;
+  position: relative;
+  margin-bottom: 3rem;
+  margin-left: 3rem;
+  text-decoration: none;
+}
+.card-container .link-card .card-image {
+  width: 100;
+  height: 100%;
+  z-index: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.card-container .link-card .card-background {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5019607843));
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  border-radius: 10px;
+  height: 100%;
+}
+.card-container .link-card .card-title {
+  display: flex;
+  position: absolute;
+  width: 55%;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  z-index: 3;
+  padding-left: 20px;
+}
+
+footer {
+  max-height: 13rem;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 4rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+footer .logo-footer {
+  width: 7.62rem;
+  height: 2.46rem;
+  margin-bottom: 30px;
+}
+footer .footer-rights {
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 0;
+  font-size: 20px;
+}/*# sourceMappingURL=main.css.map */
