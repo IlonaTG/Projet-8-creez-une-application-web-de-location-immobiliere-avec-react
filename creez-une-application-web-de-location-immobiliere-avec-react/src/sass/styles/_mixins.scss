@@ -1,0 +1,12 @@
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+@mixin position-right{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}

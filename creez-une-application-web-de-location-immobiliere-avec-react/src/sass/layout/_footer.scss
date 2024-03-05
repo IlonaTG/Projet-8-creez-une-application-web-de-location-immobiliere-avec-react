@@ -1,0 +1,31 @@
+@import '../styles/mixins';
+@import "../styles/colors";
+
+
+footer{
+    max-height: 13rem;
+    background-color: $black;
+    color: $white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 4rem;
+    margin-top: 2rem;
+    width: 100%;
+    
+  
+    .logo-footer {
+      width: 7.62rem;
+      height: 2.46rem;
+      margin-bottom: 30px;
+    }
+  
+    .footer-rights {
+      text-align: center;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      margin: 0;
+      font-size: 20px;
+    }
+}

@@ -1,0 +1,46 @@
+@import '../styles/mixins';
+@import '../styles/colors';
+@import '../styles/general';
+
+.banner{
+    @include center;
+    margin-top: 20vh;
+    margin-bottom: 10rem;
+    height: 7rem;
+
+   .banner-image{
+    @include center;
+    position: absolute;
+    border-radius: 25px;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+    height: 13.93rem;
+    width: 81vw;
+    margin-left: 0%;
+   }
+   .banner-background{
+    position: absolute;
+    width: 81vw;
+    height: 14rem ;
+    background-color: $black;
+    opacity: 0.6;
+    z-index: 2;
+    border-radius: 25px;
+    }
+   
+
+   .banner-title{
+    @include center;
+    margin: 6rem 1rem;
+    position: relative;
+    color: $white;
+    z-index: 3;
+    font-size: 48px;
+    font-weight: 700;
+   }
+    }
+    
+    
+
+

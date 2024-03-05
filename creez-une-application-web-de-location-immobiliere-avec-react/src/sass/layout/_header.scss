@@ -1,0 +1,27 @@
+@import '../styles/mixins';
+@import "../styles/colors";
+
+
+.links {
+    @include position-right;
+    a{
+    color: $black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 70px;
+  }
+    &.link-acceuil:hover{
+      text-decoration: underline;
+    }
+    &.link-apropos:hover{
+      text-decoration: underline;
+    }
+  }
+  
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+  }
