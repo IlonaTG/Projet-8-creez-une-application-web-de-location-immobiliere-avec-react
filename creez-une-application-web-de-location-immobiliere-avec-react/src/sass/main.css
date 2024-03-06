@@ -2,7 +2,6 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-style: normal;
-  line-height: 142.6%;
 }
 
 #root {
@@ -18,38 +17,37 @@ body {
   justify-content: center;
 }
 
-.links {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  align-items: center;
-}
-.links a {
-  color: #000000;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 500;
-  margin-left: 70px;
-}
-.links.link-acceuil:hover {
-  text-decoration: underline;
-}
-.links.link-apropos:hover {
-  text-decoration: underline;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
   margin-top: 20px;
 }
+.navbar .links {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar .links .link-acceuil, .navbar .links .link-apropos {
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 70px;
+  cursor: pointer;
+}
+.navbar .links .link-acceuil.link-acceuil:hover, .navbar .links .link-apropos.link-acceuil:hover {
+  text-decoration: underline;
+}
+.navbar .links .link-acceuil.link-apropos:hover, .navbar .links .link-apropos.link-apropos:hover {
+  text-decoration: underline;
+}
 
 * {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-style: normal;
-  line-height: 142.6%;
 }
 
 #root {
@@ -113,7 +111,6 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-style: normal;
-  line-height: 142.6%;
 }
 
 #root {
@@ -175,6 +172,48 @@ body {
   color: #ffffff;
   z-index: 3;
   padding-left: 20px;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  max-width: 1240px;
+}
+
+body {
+  height: auto;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.error-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.error-section .error-number {
+  color: #FF6060;
+  font-size: 18rem;
+  font-weight: 700;
+  margin: 0;
+  margin-top: 4rem;
+}
+.error-section .error-text {
+  color: #FF6060;
+  font-size: 36px;
+}
+.error-section .error-back_home {
+  color: #000000;
+  font-size: 18px;
+  margin: 7rem 0;
 }
 
 footer {

@@ -5,7 +5,7 @@ import bannerAproposPage from '../../assets/banners/banner-apropos.png';
 function Apropos(){
     return(
         <section className="banner-homepage">
-            <Banner image={bannerAproposPage} title={'ppppppp'} />
+            <Banner image={bannerAproposPage} />
         </section>
     )
 }
