@@ -1,0 +1,7 @@
+@import '../styles/general';
+@import '../styles/colors';
+@import '../styles/mixins';
+
+.rate{
+    @include position-right
+}
