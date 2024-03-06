@@ -1,0 +1,17 @@
+@import '../styles/general';
+@import '../styles/colors';
+@import '../styles/mixins';
+
+.label-container{
+    @include position-left;
+    .appartement-title{
+        font-size: 36px;
+        font-weight: 500;
+        color: $primary;
+    }
+    .appartement-location{
+        font-size: 18px;
+        font-weight: 500;
+        color: $black;
+    }
+}
