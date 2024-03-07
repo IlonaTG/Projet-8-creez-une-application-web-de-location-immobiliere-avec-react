@@ -1,0 +1,52 @@
+@import '../styles/general';
+@import '../styles/colors';
+@import '../styles/mixins';
+
+.collapse-container_apropos{
+    @include center-column;
+    .collapse-apropos{
+        /*position: relative;*/
+        width: 100%;
+        margin-bottom: 2rem;
+        max-width: 1023px;
+        cursor: pointer;
+        .collapse-header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /*position: absolute;*/
+            box-sizing: border-box;
+            width: 100%;
+            background-color: $primary;
+            color: $white;
+            height: 3.38rem;
+            padding: 10px 20px 10px 15px;
+            border-radius: 5px;
+            z-index: 1;
+            h2 {
+                margin: 0;
+                font-size: 1.5rem;
+            }
+            img {
+                width: 1.5rem;
+                height: 0.8rem;
+                cursor: pointer;
+            }
+       
+        }
+    
+        .collapse-body {
+            color: $primary;
+            border-radius: 0px 0px 5px 5px;
+            background-color: $background;
+            font-size: 1.13rem;
+            p {
+                margin: 0;
+                color: $black;
+                font-weight: 500;
+                padding: 10px 20px 10px 15px;
+            }
+        }
+    }
+
+}
