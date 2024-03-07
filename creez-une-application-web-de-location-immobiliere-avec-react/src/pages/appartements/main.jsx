@@ -8,6 +8,3 @@
 //import Rate from "../../components/rate/main";
 
 
-//function Appartement(){
-
-//}
