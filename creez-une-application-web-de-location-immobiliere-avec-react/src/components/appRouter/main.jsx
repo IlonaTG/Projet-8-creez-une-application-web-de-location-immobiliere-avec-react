@@ -5,8 +5,8 @@ import Footer from '../../components/layout/footer/main'
 import Header from '../../components/layout/header/main'
 import Apropos from '../../pages/apropos/main'
 import Error from '../layout/404/main'
-//import Appartement from '../../pages/appartements/main'
-//import Appartement from '../../pages/appartements/main'
+import Appartement from '../../pages/appartements/main'
+
 
 
 
@@ -18,7 +18,7 @@ function AppRouter() {
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/apropos" element={<Apropos />} />
-            
+            <Route path="/appartements/:id" element={<Appartement />} />
             <Route path='*' element={<Error />} />
           </Routes>
           </div>

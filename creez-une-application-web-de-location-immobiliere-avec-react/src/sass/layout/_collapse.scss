@@ -4,7 +4,7 @@
 
 .collapse-container_apropos{
     @include center-column;
-    .collapse-apropos{
+    .collapse{
         /*position: relative;*/
         width: 100%;
         margin-bottom: 2rem;
@@ -39,14 +39,60 @@
             color: $primary;
             border-radius: 0px 0px 5px 5px;
             background-color: $background;
-            font-size: 1.13rem;
             p {
                 margin: 0;
                 color: $black;
                 font-weight: 500;
+                font-size: 1.13rem;
+                line-height: 26px;
                 padding: 10px 20px 10px 15px;
             }
         }
     }
 
+}
+
+.collapse-container_appartement{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    .collapse{
+        width: 36.37rem;
+        .collapse-header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+            width: 100%;
+            background-color: $primary;
+            color: $white;
+            height: 3.38rem;
+            padding: 10px 20px 10px 15px;
+            border-radius: 5px;
+            z-index: 1;
+            cursor: pointer;
+            h2{
+                margin: 0;
+                font-size: 1.5rem;
+            }
+            img{
+                width: 1.5rem;
+                height: 0.8rem;
+            }
+        }
+        .collapse-body{
+            color: $primary;
+            border-radius: 0px 0px 5px 5px;
+            background-color: $background;
+            
+            p{
+                margin: 0;
+                color: $black;
+                font-weight: 500;
+                padding: 10px 20px 10px 15px;
+                font-size: 1.13rem;
+                line-height: 25.67px;
+            }
+        }
+    }
 }

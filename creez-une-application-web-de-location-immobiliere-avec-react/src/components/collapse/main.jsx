@@ -11,15 +11,26 @@ function Collapse({ id, title, description }) {
     setIsOpen(!isOpen);
   };
 
+  let contentElement;
+
+  if (typeof description === 'string') {
+    contentElement = <p>{description}</p>;
+  } else if (Array.isArray(description)) {
+    contentElement = description.map((item, index) => (
+      <p key={index}>{item}</p>
+    ));
+  }
+
+
   return (
-    <section className='collapse-apropos' key={id}>
+    <section className='collapse' key={id}>
       <div className="collapse-header" onClick={toggleCollapse}>
         <h2>{title}</h2>
         <img src={isOpen ? ArrowBackDown : ArrowBackUp} alt="Arrow" className="arrow-back" />
       </div>
       {isOpen && (
         <div className="collapse-body">
-          <p>{description}</p>
+          <p>{contentElement}</p>
         </div>
       )}
     </section>

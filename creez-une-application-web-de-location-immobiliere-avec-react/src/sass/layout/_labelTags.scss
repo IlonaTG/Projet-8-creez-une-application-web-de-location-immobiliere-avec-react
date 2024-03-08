@@ -1,0 +1,40 @@
+@import '../styles/general';
+@import '../styles/colors';
+@import '../styles/mixins';
+
+
+.appartement-info_container{
+    @include space-between;
+    .appartement-info_profil{
+        .label-container{
+    
+            .appartement-title{
+                font-size: 36px;
+                font-weight: 500;
+                color: $primary;
+                margin-bottom: 0%;
+            }
+            .appartement-location{
+                font-size: 18px;
+                font-weight: 500;
+                color: $black;
+                margin-top: 0.5rem;
+            }
+        }
+
+        .tags-container{
+            @include left;
+            span{
+                text-align: center;
+                @include center;
+                width: 7.19rem;
+                height: 25px;
+                border-radius: 10px;
+                background-color: $primary;
+                color: $white;
+                padding: 3px 40px 3px 40px;
+                margin-right: 10px;
+            }
+        }
+    }
+}

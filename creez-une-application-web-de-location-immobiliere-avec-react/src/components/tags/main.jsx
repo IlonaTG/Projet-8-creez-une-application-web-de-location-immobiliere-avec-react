@@ -2,9 +2,9 @@ import '../../sass/layout/_tags.scss'
 
 function Tags({ tags }) {
     const listTags = tags.map((listTags) => (
-      <li key={listTags}>{listTags}</li>
+      <span key={listTags}>{listTags}</span>
     ))
-    return <ul className="tags-container">{listTags}</ul>
+    return <div className="tags-container">{listTags}</div>
   }
   
   export default Tags

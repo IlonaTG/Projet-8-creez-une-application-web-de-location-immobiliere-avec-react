@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import '../../sass/layout/_label.scss'
+import '../../sass/layout/_labelTags.scss'
 
 function Label ({title, location}){
 return(

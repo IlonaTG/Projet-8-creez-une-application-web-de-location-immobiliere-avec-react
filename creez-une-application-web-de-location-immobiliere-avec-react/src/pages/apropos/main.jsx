@@ -6,11 +6,10 @@ import aproposData from '../../data/apropos.json';
 
 function Apropos(){
     const collapseContent = aproposData.map((item) => (
-        <Collapse
+        <Collapse 
           key={item.id}
           title={item.title}
           description={item.description}
-          
         />
       ))
 

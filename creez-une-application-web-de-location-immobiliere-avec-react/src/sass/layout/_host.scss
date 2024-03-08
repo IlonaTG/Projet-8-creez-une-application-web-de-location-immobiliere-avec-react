@@ -1,0 +1,30 @@
+@import '../styles/general';
+@import '../styles/colors';
+@import '../styles/mixins';
+
+.appartement-info_host{
+    @include position-right;
+    flex-direction: column;
+    .host-profil{
+        @include center;
+
+        p{
+            font-size: 18px;
+            font-weight: 500;
+            color: $primary;
+            margin-right: 25px;
+        }
+        img{
+            width: 64px;
+            height: 64px;
+            border-radius: 50px;
+        }
+    }
+
+    .rate{
+        margin-top: 20px;
+        img{
+            margin-left: 10px;
+    }
+    }
+}
