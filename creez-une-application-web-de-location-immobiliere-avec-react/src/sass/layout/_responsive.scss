@@ -1,0 +1,171 @@
+@import '../styles/colors';
+@import '../styles/mixins';
+
+@media screen and (min-width: 375px) and (max-width: 768px){
+    #root{
+        width: 768px;
+        .navbar{
+            max-width: 83.8vw;
+            margin: 0.5rem 2rem 5rem 2rem;
+            .logo{
+                img{
+                    width: 145px;
+                    height: 46.88px;  
+                }
+            }
+            .links{
+                .link-acceuil, .link-apropos{
+                margin-left: 1rem;
+                word-wrap: normal;
+                text-transform: uppercase;
+                font-size: 12px;
+                }
+            }
+        }
+        .main-container{
+            margin-left: 2rem;
+            .banner{
+                margin-bottom: 100px;
+            }
+            .card-container{
+                padding-top: 0%;
+                background-color: $white;
+                .link-card{
+                    margin: 0;
+                    width: 319px;
+                        height: 255px;
+                        margin-bottom: 20px;
+                    .card-image{
+                        width: 319px;
+                        height: 255px;
+                    }
+                    .card-background{
+                        width: 319px;
+                        height: 255px;
+                    }
+                }
+            }
+            .slideshow-container{
+                margin-top: 0%;
+                .slideshow-navigation{
+                    .navigation-back, .navigation-forward{
+                        width: 22px;
+                        height: 30px;
+                    }
+                }
+                .slide{
+                    img{
+                        width: 319px;
+                        height: 255px;
+                    }
+                    .slide-count{
+                        visibility: hidden;
+                    }
+                }
+            }
+            .appartement-info_container{
+                display: flex;
+                flex-direction: column;
+                .appartement-info_profil{
+                    .label-container{
+                        .appartement-title{
+                            font-size: 18px;
+                        }
+                        .appartement-location{
+                            font-size: 14px;
+                        }
+                    }
+                    .tags-container{
+                        font-size: 10px;
+                        span{
+                            width: 5.25rem;
+                            padding: 0 2px 0 2px;
+                        }
+                    }
+                }
+                .appartement-info_host{
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: space-between;
+                    align-content: center;
+                    margin-top: 20px;
+                    .host-profil{
+                        p{
+                            font-size: 12px;
+                        }
+                        .host-picture{
+                            width: 32px;
+                            height: 32px;
+                        }
+                    }
+                    .rate{
+                        margin-top: 0%;
+                        img{
+                        width: 13.41px;
+                        height: 13px;
+                        margin-left: 0%;
+                        margin-right: 10px;
+                    }
+                    }
+                }
+            }
+            .collapse-container_appartement{
+                margin-top: 10px;
+                .collapse{
+                    .collapse-header{
+                        height: 30px;
+                        h2{
+                            font-size: 13px;
+                        }
+                        img{
+                            width: 16px;
+                            height: 9.14px;
+                        }
+                    }
+                    .collapse-body{
+                        p{
+                        font-size: 12px;
+                        padding: 5px;
+                        line-height: 17.11px;
+                    }
+                    }
+                }
+            }
+            .collapse-container_apropos{
+                margin: 0%;
+                width: 83.8vw;
+                .collapse{
+                    margin-bottom: 20px;
+                    width: 83.8vw;
+                    .collapse-header{
+                        padding: 3px 10px 3px 10px;
+                        height: 30px;
+                        width: 83.8vw;
+                        h2{
+                        font-size: 13px;
+                        font-weight: 700;
+                    }
+                    img{
+                        width: 16px;
+                        height: 9.14px;
+                    }
+                    }
+                    .collapse-body{
+                        width: 83.8vw;
+                        p{
+                            width: 83.8vw;
+                            padding: 5px;
+                            font-size: 12px;
+                            line-height: 17.11px;
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            width:100%;
+            max-width: none;
+        }
+    }
+}
+

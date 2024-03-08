@@ -1,14 +1,16 @@
-@import '../styles/general';
 @import '../styles/colors';
 @import '../styles/mixins';
 
 .collapse-container_apropos{
     @include center-column;
+    max-width: 66.60vw;
+    margin-left: 9vw;
     .collapse{
         /*position: relative;*/
         width: 100%;
         margin-bottom: 2rem;
-        max-width: 1023px;
+        max-width: 66.60vw;
+        //max-width: 1023px;
         cursor: pointer;
         .collapse-header{
             display: flex;
@@ -57,7 +59,7 @@
     justify-content: space-between;
     margin-top: 3rem;
     .collapse{
-        width: 36.37rem;
+        width: 40vw;
         .collapse-header{
             display: flex;
             align-items: center;

@@ -1,4 +1,4 @@
-import '../../sass/layout/_tags.scss'
+import '../../sass/layout/_labelTags.scss'
 
 function Tags({ tags }) {
     const listTags = tags.map((listTags) => (

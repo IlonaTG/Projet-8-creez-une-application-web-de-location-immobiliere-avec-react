@@ -1,10 +1,10 @@
-@import '../styles/general';
 @import '../styles/colors';
 @import '../styles/mixins';
 
 .slideshow-container{
     margin: 3rem 0 1rem 0;
     position: relative;
+    width: 83.8vw;
    .slideshow-navigation{
         position: absolute;
         top: 50%;

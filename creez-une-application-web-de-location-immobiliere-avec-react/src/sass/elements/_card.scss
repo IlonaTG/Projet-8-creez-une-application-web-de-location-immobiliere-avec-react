@@ -1,16 +1,17 @@
 @import '../styles/mixins';
 @import '../styles/colors';
-@import '../styles/general';
+
 
 .card-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    width: 81vw;
+    width: 83.8vw;
     position: relative;
     padding-top: 56px;
     background-color: $banner-background;
     border-radius: 25px;
+    
   
     .link-card{
         display: flex;
