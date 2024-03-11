@@ -536,6 +536,19 @@ footer .footer-rights {
     font-size: 12px;
     line-height: 17.11px;
   }
+  #root .main-container .error-section {
+    width: 83.8vw;
+  }
+  #root .main-container .error-section .error-number {
+    font-size: 128px;
+  }
+  #root .main-container .error-section .error-text {
+    font-size: 18px;
+    text-align: center;
+  }
+  #root .main-container .error-section .error-back_home {
+    font-size: 14px;
+  }
   #root footer {
     width: 100%;
     max-width: none;
