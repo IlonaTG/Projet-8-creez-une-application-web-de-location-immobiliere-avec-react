@@ -5,7 +5,7 @@
 .banner{
     @include center;
     margin-top: 10vh;
-    margin-bottom: 10rem;
+    margin-bottom: 7rem;
     height: 7rem;
     width: 83.8vw;
 
@@ -19,6 +19,7 @@
     height: 13.93rem;
     width: 83.8vw;
     margin-left: 0%;
+    
    }
    .banner-background{
     position: absolute;
@@ -28,6 +29,7 @@
     opacity: 0.6;
     z-index: 2;
     border-radius: 25px;
+   
     }
    
 
