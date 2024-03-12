@@ -5,7 +5,9 @@ function Header(){
     return(
     <div className="navbar">
       <div className="logo">
+        <Link className='link-acceuil_logo' to="/">
         <img src={logo} alt="logo d'agence"/>
+        </Link>
       </div>
       <div className="links">
         <Link className="link-acceuil" exact="true" to="/">Accueil</Link>

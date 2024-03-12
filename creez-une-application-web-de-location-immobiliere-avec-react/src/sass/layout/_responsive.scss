@@ -1,12 +1,12 @@
 @import '../styles/colors';
 @import '../styles/mixins';
 
-@media screen and (min-width: 375px) and (max-width: 768px){
+@media screen and (max-width: 768px){
     #root{
         width: 768px;
         .navbar{
             max-width: 83.8vw;
-            margin: 0.5rem 2rem 5rem 2rem;
+            margin: 0.5rem 8vw 2.5rem 8vw;
             .logo{
                 img{
                     width: 145px;
@@ -14,6 +14,8 @@
                 }
             }
             .links{
+                display: flex;
+                flex-wrap: wrap;
                 .link-acceuil, .link-apropos{
                 margin-left: 1rem;
                 word-wrap: normal;
@@ -23,9 +25,20 @@
             }
         }
         .main-container{
-            margin-left: 2rem;
+            margin-left: 8vw;
             .banner{
-                margin-bottom: 100px;
+                margin: 0 0 3vh 0;
+                
+                .banner-image{
+                    height: 111px;
+                }
+                .banner-background{
+                    height: 111px;
+                }
+                .banner-title{
+                    font-size: 24px;
+                    text-align: left;
+                }
             }
             .card-container{
                 padding-top: 0%;
@@ -36,11 +49,11 @@
                         height: 255px;
                         margin-bottom: 20px;
                     .card-image{
-                        width: 319px;
+                        width: 83vw;
                         height: 255px;
                     }
                     .card-background{
-                        width: 319px;
+                        width: 83vw;
                         height: 255px;
                     }
                 }
@@ -55,7 +68,7 @@
                 }
                 .slide{
                     img{
-                        width: 319px;
+                        width: 84vw;
                         height: 255px;
                     }
                     .slide-count{
@@ -111,10 +124,16 @@
             }
             .collapse-container_appartement{
                 margin-top: 10px;
+                @include center-column;
+                
                 .collapse{
+                    width: 84vw;
+                    margin-bottom: 30px;
                     .collapse-header{
                         height: 30px;
+                        
                         h2{
+                            
                             font-size: 13px;
                         }
                         img{
@@ -135,7 +154,7 @@
                 margin: 0%;
                 width: 83.8vw;
                 .collapse{
-                    margin-bottom: 20px;
+                    margin-bottom: 30px;
                     width: 83.8vw;
                     .collapse-header{
                         padding: 3px 10px 3px 10px;
@@ -153,7 +172,7 @@
                     .collapse-body{
                         width: 83.8vw;
                         p{
-                            width: 83.8vw;
+                            width: 80vw;
                             padding: 5px;
                             font-size: 12px;
                             line-height: 17.11px;
@@ -178,7 +197,9 @@
         footer{
             width:100%;
             max-width: none;
+            
         }
     }
 }
+
 

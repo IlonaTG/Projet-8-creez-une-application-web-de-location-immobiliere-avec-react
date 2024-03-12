@@ -4,20 +4,24 @@
   font-style: normal;
 }
 
-#root {
-  height: 100%;
-  width: 1440px;
-}
-
 body {
   height: auto;
   margin: 0;
   display: flex;
   justify-content: center;
 }
-body .main-container {
+body #root {
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body #root .main-container {
+  flex: 1;
   max-width: 83.8vw;
-  margin-left: 5.7rem;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .navbar {
@@ -25,8 +29,8 @@ body .main-container {
   justify-content: space-between;
   flex-wrap: nowrap;
   width: 83.8vw;
+  margin: 0 auto;
   margin-top: 20px;
-  margin-left: 5.6rem;
 }
 .navbar .links {
   display: flex;
@@ -102,7 +106,7 @@ body .main-container {
   justify-content: flex-start;
   width: 83.8vw;
   position: relative;
-  padding-top: 56px;
+  padding-top: 3rem;
   background-color: #F6F6F6;
   border-radius: 25px;
 }
@@ -110,15 +114,15 @@ body .main-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 22rem;
-  height: 22rem;
+  width: 23.5vw;
+  height: 27.5vh;
   position: relative;
   margin-bottom: 3rem;
-  margin-left: 3rem;
+  margin-left: 3.3vw;
   text-decoration: none;
 }
 .card-container .link-card .card-image {
-  width: 100;
+  width: 100%;
   height: 100%;
   z-index: 1;
   -o-object-fit: cover;
@@ -163,7 +167,6 @@ body .main-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /*position: absolute;*/
   box-sizing: border-box;
   width: 100%;
   background-color: #FF6060;
@@ -374,14 +377,13 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 4rem;
+  padding-top: 4vh;
   margin-top: 2rem;
-  width: 100%;
 }
 footer .logo-footer {
   width: 7.62rem;
   height: 2.46rem;
-  margin-bottom: 30px;
+  margin-bottom: 3vh;
 }
 footer .footer-rights {
   text-align: center;
@@ -389,20 +391,24 @@ footer .footer-rights {
   align-items: flex-end;
   justify-content: center;
   margin: 0;
-  font-size: 20px;
+  font-size: 2vh;
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   #root {
     width: 768px;
   }
   #root .navbar {
     max-width: 83.8vw;
-    margin: 0.5rem 2rem 5rem 2rem;
+    margin: 0.5rem 8vw 2.5rem 8vw;
   }
   #root .navbar .logo img {
     width: 145px;
     height: 46.88px;
+  }
+  #root .navbar .links {
+    display: flex;
+    flex-wrap: wrap;
   }
   #root .navbar .links .link-acceuil, #root .navbar .links .link-apropos {
     margin-left: 1rem;
@@ -411,10 +417,20 @@ footer .footer-rights {
     font-size: 12px;
   }
   #root .main-container {
-    margin-left: 2rem;
+    margin-left: 8vw;
   }
   #root .main-container .banner {
-    margin-bottom: 100px;
+    margin: 0 0 3vh 0;
+  }
+  #root .main-container .banner .banner-image {
+    height: 111px;
+  }
+  #root .main-container .banner .banner-background {
+    height: 111px;
+  }
+  #root .main-container .banner .banner-title {
+    font-size: 24px;
+    text-align: left;
   }
   #root .main-container .card-container {
     padding-top: 0%;
@@ -427,11 +443,11 @@ footer .footer-rights {
     margin-bottom: 20px;
   }
   #root .main-container .card-container .link-card .card-image {
-    width: 319px;
+    width: 83vw;
     height: 255px;
   }
   #root .main-container .card-container .link-card .card-background {
-    width: 319px;
+    width: 83vw;
     height: 255px;
   }
   #root .main-container .slideshow-container {
@@ -442,7 +458,7 @@ footer .footer-rights {
     height: 30px;
   }
   #root .main-container .slideshow-container .slide img {
-    width: 319px;
+    width: 84vw;
     height: 255px;
   }
   #root .main-container .slideshow-container .slide .slide-count {
@@ -490,6 +506,14 @@ footer .footer-rights {
   }
   #root .main-container .collapse-container_appartement {
     margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #root .main-container .collapse-container_appartement .collapse {
+    width: 84vw;
+    margin-bottom: 30px;
   }
   #root .main-container .collapse-container_appartement .collapse .collapse-header {
     height: 30px;
@@ -511,7 +535,7 @@ footer .footer-rights {
     width: 83.8vw;
   }
   #root .main-container .collapse-container_apropos .collapse {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     width: 83.8vw;
   }
   #root .main-container .collapse-container_apropos .collapse .collapse-header {
@@ -531,7 +555,7 @@ footer .footer-rights {
     width: 83.8vw;
   }
   #root .main-container .collapse-container_apropos .collapse .collapse-body p {
-    width: 83.8vw;
+    width: 80vw;
     padding: 5px;
     font-size: 12px;
     line-height: 17.11px;

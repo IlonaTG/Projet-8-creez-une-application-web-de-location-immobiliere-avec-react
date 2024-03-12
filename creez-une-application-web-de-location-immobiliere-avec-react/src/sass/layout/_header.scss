@@ -8,8 +8,8 @@
   justify-content: space-between;
   flex-wrap: nowrap;
   width: 83.8vw;
+  margin: 0 auto;
   margin-top: 20px;
-  margin-left: 5.6rem;
   
   .links {
     @include position-right;

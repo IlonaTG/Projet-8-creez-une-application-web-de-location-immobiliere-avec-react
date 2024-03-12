@@ -30,7 +30,7 @@ function Collapse({ id, title, description }) {
       </div>
       {isOpen && (
         <div className="collapse-body">
-          <p>{contentElement}</p>
+          {contentElement}
         </div>
       )}
     </section>

@@ -16,7 +16,6 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            /*position: absolute;*/
             box-sizing: border-box;
             width: 100%;
             background-color: $primary;
@@ -86,7 +85,6 @@
             color: $primary;
             border-radius: 0px 0px 5px 5px;
             background-color: $background;
-            
             p{
                 margin: 0;
                 color: $black;
